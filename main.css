@@ -1,9 +1,82 @@
-h1 {
-    color: red;
+body{
+    background-color: rgb(209, 209, 209);
 }
 
-.text2018 {
-    color: #ff59c0;
-    font-size: 40px;
-	background-color:green;
+
+.container {
+    margin: auto;
+    max-width: 800px;
+
+}
+
+.right{
+    float:right;
+    width: 300px;
+    
+}
+
+.left{
+    max-width: 480px;
+}
+
+.debug {
+    border: 1px outset white;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.product-item{
+    background-color:lightgray;
+    display:inline-block;
+    border-radius:12px;
+    padding:8px;
+    color: Dimgray;
+    margin: 3px;
+  
+}
+
+.lish-products{
+    border-bottom: 1px solid rgb(209, 209, 209);
+    padding-bottom: 15px;
+}
+.kupl-products{
+    padding-bottom: 15px;
+}
+.amount{
+background-color: orange;
+color:white;
+border-radius:100%;
+display: inline-block;
+height:16px;
+width:16px;
+text-align: center;
+}
+
+.shrift{
+    font-weight: bold;
+    font-size: 20px;
+   margin:15px;
+   padding-bottom: 15px;
+}
+.lish{
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+.kupl{
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+.add-product{
+
+}
+#add{
+    border: 1px solid hsl(209, 93%, 48%);
+    color:white;
+    background-color: hsl(209, 93%, 48%);
+    margin-left:0px;
+    height: 32px;
+}
+
+#name-prod{
+    width:380px;
+    padding: 8px;
+    margin: 10px 0px 10px 5px;  
 }
