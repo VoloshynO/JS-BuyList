@@ -1,55 +1,102 @@
-<!DOCTYPE html>
-<html>
-<head lang="uk">
-    <meta charset="UTF-8">
-    <title>My Page</title>
+    <!DOCTYPE html>
+    <html>
+    <head lang="uk">
+        <meta charset="UTF-8">
+        <title>My Page</title>
 
 
-    <link rel="stylesheet" href="main.css" />
-</head>
-<body>
-<div class="container">
-    <div class="right debug">
-        <p class="lish shrift">Залишилося</p>
-        <div class="lish-products">
-            <span class="product-item">
-                Помідори
-                    <span class="amount">
-                        3
-                    </span>
-             </span>
-             <span class="product-item">
-                    Картопля
-                        <span class="amount">
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+    <div class="container">
+        <div class="right debug">
+            <p class="lish shrift">Залишилося</p>
+            <div class="lish-products">
+                <span class="product-item">
+                    Помідори
+                        <span class="amount-circle">
                             3
                         </span>
-                 </span>
-                 <span class="product-item">
-                        Сир
-                            <span class="amount">
-                                3
-                            </span>
-                     </span>
-
-        </div>
-        <p class="kupl shrift">Куплено</p>
-        <div class="kupl-products">
+                </span>
                 <span class="product-item">
-                        Помідори
-                            <span class="amount">
+                        Печиво
+                            <span class="amount-circle">
                                 3
                             </span>
-                     </span>
+                    </span>
+                    <span class="product-item cheese">
+                            Сир
+                                <span class="amount-circle">
+                                    3
+                                </span>
+                        </span>
+
+            </div>
+            <p class="kupl shrift">Куплено</p>
+            <div class="kupl-products">
+                    <span class="product-item">
+                            Помідори
+                                <span class="amount-circle">
+                                    3
+                                </span>
+                        </span>
+            </div>
         </div>
+        <section class="left debug">
+             <div class="add-product input-add ">
+                      <input id="name-prod" type="text" placeholder="Назва продукту">
+                        <button id="add"  > Додати</button>
+             </div>
+             <div id="items-container">
+                <div class="item">
+                    <div class="first-column titles">
+                        <span class="title" >Помідори</span>
+                        
+                    </div>
+                    <div class="second-column add-buttons">
+                            <button class=" circular-button red-button" ><b>-</b></button>
+                            <span class="amount">1</span>
+                            <button class=" circular-button green-button"  ><b>+</b></button>
+                    </div>
+                    <div class="third-column ">
+                        <button class="button-buy" >Куплено</button>
+                        <button class="button-delete" >X</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="first-column titles">
+                        <span class="title" >Печиво</span>
+                        
+                    </div>
+                    <div class="second-column add-buttons">
+                        <button class=" circular-button red-button" ><b>-</b></button>
+                        <span class="amount">1</span>
+                        <button class=" circular-button green-button" ><b>+</b></button>
+                    </div>
+                    <div class="third-column ">
+                        <button class="button-buy">Куплено</button>
+                        <button class="button-delete">X</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="first-column titles">
+                        <span class="title" >Сир</span>
+                        
+                    </div>
+                    <div class="second-column add-buttons">
+                        <button class=" circular-button red-button" ><b>-</b></button>
+                        <span class="amount">1</span>
+                        <button class=" circular-button green-button" ><b>+</b></button>
+                    </div>
+                    <div class="third-column ">
+                        <button class="button-buy">Куплено</button>
+                        <button class="button-delete">X</button>
+                    </div>
+             
+            </div>
+
+        </section>
     </div>
-    <section class="left debug">
-        <div class="add-product">
-                <form>
-                        <input id="name-prod" type="text" value="Назва продукту">
-                        <input id="add" type="submit" value="Додати">
-                    </form>
-        </div>
-    </section>
-</div>
-</body>
-</html>
+   
+    </body>
+    </html>
