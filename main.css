@@ -6,19 +6,18 @@ body{
 
 .container {
     margin: auto;
-    max-width: 1000px;
-    padding: 15px;
-    overflow: auto;
+    width: 90%;
+    padding: 10% 15px 15px 15px;
 }
 
 .right{
+    overflow: visible;
     float:right;
     width: 30%;
-    
 }
 
 .left{
-    max-width: 65%;
+    width: 65%;
 }
 
 .debug {
@@ -73,14 +72,14 @@ padding-bottom: 2px;
 }
 .add-product{
     padding: 10px;
-
+    display: flex;
 }
 #add{
     border: 1px solid hsl(209, 93%, 48%);
     color:white;
     background-color: hsl(209, 93%, 48%);
     margin-left:0px;
-    height: 96%;
+    height: 100%;
     box-sizing: border-box ;
     width:15%;
 }
@@ -195,4 +194,80 @@ padding-bottom: 2px;
     padding: .5833em .833em;
     border-radius: .28571429rem;
     color: rgba(88, 83, 83, 0.842);
+}
+
+.badge{
+    position: fixed;
+    bottom: 0;
+    width: 200px;
+    height: 110px;
+    left: 5%;
+    background-color: purple;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    transform: translateY(95px); 
+    transition:	all	1s	ease;
+}
+
+.text{
+    display: none;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.badge:hover{
+    background-color: #6D10FF;
+    transform: translateY(0px); 
+}
+@media print{
+    .badge{
+        border: 3px solid purple;
+        background-color: white;
+        color: black;
+    }
+    .badge-title{
+        display: none;
+    }
+    .print{
+        display: inline;
+        
+    }
+}
+
+.hiden-badge{
+    margin-top: 22px;
+}
+
+.author{
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 24px;
+}
+
+.text1{
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.tooltip{
+    visibility: hidden;
+    width: 120px;
+    background-color: purple;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    transform: translateX(-85px) translateY(-40px);
+    z-index: 1;
+}
+
+button:hover .tooltip{
+visibility: visible;
+content: attr(data-tooltip);
 }

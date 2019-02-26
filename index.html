@@ -45,7 +45,7 @@
         <section class="left debug">
              <div class="add-product input-add ">
                       <input id="name-prod" type="text" placeholder="Назва продукту">
-                        <button id="add"  > Додати</button>
+                        <button id="add"  > Додати<span class="tooltip" data-tooltip="Додати в список">Додати в список</span></button>
              </div>
              <div id="items-container">
                 <div class="item">
@@ -54,13 +54,13 @@
                         
                     </div>
                     <div class="second-column add-buttons">
-                            <button class=" circular-button red-button" ><b>-</b></button>
+                            <button class=" circular-button red-button" ><b>-</b><span class="tooltip" data-tooltip="Відняти одну одиницю">Відняти одну одиницю</span></button>
                             <span class="amount">1</span>
-                            <button class=" circular-button green-button"  ><b>+</b></button>
+                            <button class=" circular-button green-button"  ><b>+</b><span class="tooltip" data-tooltip="Додати одну одиницю">Додати одну одиницю</span></button>
                     </div>
                     <div class="third-column ">
-                        <button class="button-buy" >Куплено</button>
-                        <button class="button-delete" >X</button>
+                        <button class="button-buy" >Куплено<span class="tooltip" data-tooltip="Відмітити як куплене">Відмітити як куплене</span></button>
+                        <button class="button-delete" >X<span class="tooltip" data-tooltip="Видалити">Видалити</span></button>
                     </div>
                 </div>
                 <div class="item">
@@ -94,8 +94,16 @@
                     </div>
              
             </div>
+            <div class="badge">
+                <span class="badge_title">BuyList</span><span class=text>Voloshyn Oleksandr</span>
+                <div class="hidden-badge">
+                    <span class="text1">Created by:</span></br>
+                    <span class="text1 author">Voloshyn Oleksandr</span>
+                </div>
+            </div>
 
         </section>
+        
     </div>
    
     </body>
